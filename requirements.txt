@@ -1,0 +1,11 @@
+streamlit
+pillow
+pickle5
+numpy
+tensorflow
+keras
+scikit-learn
+opencv-python
+joblib
+streamlit_drawable_canvas
+
