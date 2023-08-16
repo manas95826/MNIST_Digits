@@ -8,4 +8,4 @@ scikit-learn
 opencv-python
 joblib
 streamlit_drawable_canvas
-
+opencv-python-headless
