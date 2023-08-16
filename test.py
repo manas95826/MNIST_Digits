@@ -7,6 +7,10 @@ from streamlit_drawable_canvas import st_canvas
 
 # Load the pre-trained MNIST digits model
 model = keras.models.load_model('model.h5')
+import os
+
+# Set environment variable to enable OpenCV headless mode
+os.environ['OPENCV_VIDEOIO_PRIORITY_MSMF'] = '0'
 
 st.title("Handwritten Digit Classifier")
 # Create a canvas for drawing
