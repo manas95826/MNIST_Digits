@@ -1,11 +1,12 @@
 import streamlit as st
 import numpy as np
-from PIL import Image
 import cv2
+import tensorflow as tf
+from tensorflow import keras
 from streamlit_drawable_canvas import st_canvas
-from modelhandling import load_model, predict_digit
-# Load the pretrained model
-model = load_model('model.h5')  # Replace with the path to your model
+
+# Load the pre-trained MNIST digits model
+model = keras.models.load_model('model.h5')
 
 st.title("Handwritten Digit Classifier")
 # Create a canvas for drawing
